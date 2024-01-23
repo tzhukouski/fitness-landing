@@ -1,0 +1,27 @@
+@keyframes ticker {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+}
+.ticker {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFCF27;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.ticker__text {
+  animation: ticker 6s linear infinite;
+  position: absolute;
+  color: #1A1A1A;
+  font-size: 32px;
+  font-weight: 1000;
+  line-height: 22px;
+}
