@@ -10,6 +10,7 @@ a {
 }
 button {
   font-size: 1rem;
+  font-family: inherit;
 }
 .container {
   max-width: 1440px;
@@ -197,11 +198,11 @@ button {
   background-repeat: no-repeat;
   background-position: 16px center;
 }
-.change__input::placeholder {
+.change__input:not([type=submit])::placeholder {
   color: black;
   opacity: 0.6;
 }
-.change__input::-ms-input-placeholder {
+.change__input:not([type=submit])::-ms-input-placeholder {
   color: black;
   opacity: 0.6;
 }
